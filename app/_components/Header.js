@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Button } from "@/components/ui/button";
 
 function Header() {
   return (
@@ -54,12 +55,7 @@ function Header() {
 
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
-              <a
-                className="block rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-white transition hover:bg-blue-700"
-                href="#"
-              >
-                Get Started
-              </a>
+              <Button size="default">Get Started</Button>
             </div>
 
             <button className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">

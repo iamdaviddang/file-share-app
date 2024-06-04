@@ -1,5 +1,6 @@
 import React from "react";
 import Constant from "../_utils/Constant";
+import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
@@ -17,18 +18,10 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-blue-700 focus:outline-none focus:ring active:bg-primary sm:w-auto"
-              href="#"
-            >
-              Get Started
-            </a>
-            <a
-              className="block w-full rounded px-12 py-3 text-sm font-medium text-primary shadow hover:text-blue-700 focus:outline-none focus:ring active:text-primary sm:w-auto"
-              href="#"
-            >
+            <Button size="lg">Get Started</Button>
+            <Button size="lg" variant="outline" className="text-primary">
               Learn More
-            </a>
+            </Button>
           </div>
         </div>
       </div>
