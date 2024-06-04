@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
               <li>
                 <a
                   className="text-gray-500 transition hover:text-gray-500/75"
-                  href="#"
+                  href="/"
                 >
                   {" "}
                   Home{" "}
@@ -24,7 +25,7 @@ function Header() {
               <li>
                 <a
                   className="text-gray-500 transition hover:text-gray-500/75"
-                  href="#"
+                  href="/upload"
                 >
                   {" "}
                   Upload{" "}
@@ -55,7 +56,9 @@ function Header() {
 
           <div className="flex items-center gap-4">
             <div className="sm:flex sm:gap-4">
-              <Button size="default">Get Started</Button>
+              <Button asChild size="default">
+                <Link href="/files">Get Started</Link>
+              </Button>
             </div>
 
             <button className="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden">

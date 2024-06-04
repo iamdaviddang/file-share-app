@@ -1,6 +1,7 @@
 import React from "react";
 import Constant from "../_utils/Constant";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -18,7 +19,9 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button size="lg">Get Started</Button>
+            <Button asChild size="lg">
+              <Link href="/files">Get Started</Link>
+            </Button>
             <Button size="lg" variant="outline" className="text-primary">
               Learn More
             </Button>
